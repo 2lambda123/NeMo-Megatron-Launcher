@@ -267,7 +267,7 @@ class BCPLauncher(Launcher):
         command_list = self._make_submission_command(submission_file_path)
         # run
         job_utils.CommandFunction(
-            command_list, ret_stdout=False, verbose=False
+            command_list, ret_stdout=True, verbose=False
         )()  # explicit errors
         return ""
 
